@@ -1,0 +1,351 @@
+html{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:  'Calibri', 'Open Sans' , 'sans-serif';
+    background: #f4f4f4;  
+}
+#home{
+    background-image: url(../img/fundo_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.img img{
+    width: 400px;
+    height: 400px;
+}
+#home h1{
+    text-align: left;
+    font-size: 5em;
+    margin-top: 200px;
+    margin-left: 150px;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000000,
+                  1px 1px 0 rgb(0, 0, 0),
+                 -1px -1px 0 rgb(0, 0, 0),
+                  1px 1px 0 rgb(0, 0, 0);
+}
+#home h2{
+    text-align: left;
+    font-size: 4em;
+    margin-left: 150px;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000000,
+                  1px 1px 0 rgb(0, 0, 0),
+                 -1px -1px 0 rgb(0, 0, 0),
+                  1px 1px 0 rgb(0, 0, 0);
+}
+#home img{
+    margin: 100px;
+    justify-content: left;
+}
+nav > ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #c7c7c7;
+    font-size: 20pt;
+    height: 5em;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 1.94em 3em;
+}
+nav a:hover{
+    background: #7b7b7b;
+    color: #000000;
+}
+#sobre{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7.5em;
+    margin-left: 1em;
+}
+#sobre p{
+    font-size: 2em;
+    margin-top: 6em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+.linha{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+#meio{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1em;
+}
+#experiencia h3{
+    margin-top: 1em;
+    margin-left: 12em;
+    font-size: 2em;
+}
+#meio p{
+    font-size: 1.5em;
+    margin-top: 7.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+#projetos h3{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+picture{
+    display: flex;
+    flex-direction: row;
+}
+picture img{
+    width: 100%;
+    height: 100%;
+
+}
+form *{
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column; 
+}
+#contato h3{
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 2em;
+}
+#contato{
+    font-size: 1em;
+}
+label{
+    font-size: 1.4em;
+    margin-left: 40px;
+}
+input[id="nome"]{
+    width: 60%;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 15px;
+}
+input[id="perguntas/comentário"]{
+    width: 80%;
+    height: 5em;
+    border: 2px solid;
+    border-radius: 15px;
+}
+input[type="email"]{
+    width: 50%;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 15px;
+}
+input[type="submit"]{
+    font-size: 35px;
+    background-color: #3aff8d;
+    color: #fff;;
+    border: 1px solid #000;
+    margin: 0px 70%;
+    height: 1.1em;
+    width: 200px;
+    font-weight: bold;
+    border-radius: 0px;
+    justify-content: center;
+    padding-left: 45px;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+    #footer{
+    margin-top: 4em;
+    padding: 2em 1em;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+}
+#footer address{
+    font-style: normal;
+    font-size: 2em;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+}
+@media screen and (max-width:980px){
+    .menu{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: linear 2s;
+        display: none;
+        z-index: 3;
+    }
+    .active{
+        display: block;
+    }
+    .conteudo_topo nav a{
+        display: block;
+    }
+}
+@media screen and (max-width: 767px){
+    }
+    .img img{
+        width: 200px;
+        height: 200px;
+    }
+    #home h1{
+        font-size: 2em;
+        margin-left: 50px;
+    }
+    #home h2{
+        font-size: 1.5em;
+        margin-left: 50px;
+    }
+    nav > ul {
+        font-size: 12pt;
+        height: 4em;
+    }
+    nav a{
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        padding: 1.37em 2em;
+    }
+    nav a:hover{
+        background: #7b7b7b;
+        color: #000000;
+    }
+    #sobre{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5em;
+        margin-left: 1em;
+    }
+    #sobre p {
+        font-size: 1.2em;
+        margin-top: 4em;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: center; 
+    }
+    #experiencia h3{
+        margin-top: 1em;
+        margin-left: 3em;
+        font-size: 2em;
+    }
+    #meio p{
+        font-size: 1.2em;
+        margin-top: 7.5em;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: center;
+    }
+    picture{
+        display: flex;
+        flex-direction: column;
+    }
+    input[type="submit"]{
+        font-size: 35px;
+        background-color: #3aff8d;
+        color: #fff;;
+        border: 1px solid #000;
+        margin: 0 50%;
+        height: 1.1em;
+        width: 200px;
+        font-weight: bold;
+        border-radius: 0px;
+        justify-content: center;
+        padding-left: 45px;
+    }
+    #footer address{
+        font-style: normal;
+        font-size: 1em;
+        text-decoration: none;
+        text-align: left;
+        color: #fff;
+}
+ @media screen and (max-width: 469px){
+    .img img{
+        width: 150px;
+        height: 150px;
+    }
+    #home h1{
+        font-size: 1.5em;
+        margin-left: -80px;
+    }
+    #home h2{
+        font-size: 1em;
+        margin-left: -80px;
+    }
+    nav > ul {
+        font-size: 8pt;
+        height: 4em;
+    }
+    #sobre{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    #sobre p {
+        font-size: 0.8em;
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: center; 
+    }
+    #experiencia h3{
+        margin-top: 1em;
+        margin-left: 2em;
+        font-size: 1.5em;
+    }
+    #meio p{
+        font-size: 0.8em;
+        margin-top: 3em;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: center;
+    }
+    #projetos h3{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #contato h3{
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    input[type="submit"]{
+        font-size: 35px;
+        background-color: #3aff8d;
+        color: #fff;;
+        border: 1px solid #000;
+        margin: 0 27%;
+        height: 1.1em;
+        width: 200px;
+        font-weight: bold;
+        border-radius: 0px;
+        justify-content: center;
+        padding-left: 45px;
+    }
+    #footer address{
+        font-style: normal;
+        font-size: 0.8em;
+    }
+ }
